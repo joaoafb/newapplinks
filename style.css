@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap');
+@keyframes animarotation {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes animaupdows {
+    0% {
+        margin-top: -10px;
+    }
+    50% {
+        margin-top: 10px;
+    }
+    100% {
+        margin-top: -10px;
+    }
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+    background-color: #1C1C1C;
+}
+
+.header {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.header img {
+    animation: animarotation 1s infinite;
+    width: 50px;
+}
+
+.header i {
+    position: absolute;
+    float: right;
+    right: 10px;
+    color: rgba(47, 241, 151, 1);
+    zoom: 150%;
+}
+
+.menu {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu i {
+    color: white;
+    margin: 0 20px 0 20px;
+}
+
+.body {
+    background-color: rgb(41, 41, 41);
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-bottom: 25px;
+}
+
+.circle {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: 0px 20px 5px 20px;
+    background-color: transparent;
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+}
+
+#iconfeed:hover,
+#iconmsg:hover,
+#iconuser:hover {
+    transform: scale(94%);
+    transition: all 1s;
+    color: rgba(47, 241, 151, 1);
+}
+
+@keyframes flip-horizontal-bottom {
+    0% {
+        transform: rotateX(0);
+    }
+    100% {}
+}
+
+.list {
+    animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    transform: all 1s;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.list .li {
+    -webkit-transition: width 1s, height 1s, background-color 2s, -webkit-transform 1s;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 10pt;
+    margin: 5px;
+    transform: all 1s;
+    border-radius: 10px;
+}
+
+.list .li:hover {
+    -webkit-transition: width 1s, height 1s, background-color 2s, -webkit-transform 1s;
+    transform: rotate(-2deg);
+    transform: all 1s;
+    color: black;
+    background-color: rgba(47, 241, 151, 1);
+}
+
+#segunda {
+    font: bold;
+    color: black;
+    background-color: rgba(47, 241, 151, 1);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.boxaula {
+    padding: 5px;
+    width: 90%;
+    height: 70px;
+    background-color: #1C1C1C;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.left {
+    position: absolute;
+    left: 10%;
+}
+
+.right {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.right i {
+    color: rgba(47, 241, 151, 1);
+    zoom: 200%;
+    margin-right: 10px;
+    margin-top: 5px;
+    transition: all 1s;
+}
+
+.right i:hover {
+    color: white;
+    -webkit-transition: width 1s, height 1s, background-color 2s, -webkit-transform 1s;
+}
+
+.left h1 {
+    color: white;
+    font-size: 10pt;
+}
+
+.left h2,
+h3 {
+    color: white;
+    font-size: 8pt;
+}
+
+.option {
+    animation: animaupdows 1s infinite;
+    opacity: 50%;
+    width: 90%;
+    height: 100px;
+    border: 1px solid rgba(47, 241, 151, 1);
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgba(47, 241, 151, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.option i {
+    zoom: 200%;
+}
+
+.boxnotif {
+    border: 0;
+    animation: right 2s;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    right: 0;
+    display: none;
+    background-color: #1C1C1C;
+    width: 90%;
+    height: 70%;
+    position: absolute;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.center {
+    width: 90%;
+}
+
+#close {
+    margin-left: 7%;
+    zoom: 140%;
+    color: white;
+    font-size: 18pt
+}
+
+.notificacaobox {
+    backdrop-filter: blur(20px);
+    padding: 5px;
+    width: 90%;
+    height: auto;
+    background-color: transparent;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.notificacaobox img {
+    animation: luz 1s infinite;
+    width: 40px;
+}
+
+.notificacaobox label {
+    animation: luz 1.5s infinite;
+    font-size: 10pt;
+    color: gray;
+}
+
+.notificacaobox span {
+    font-size: 10pt;
+    color: white;
+}
+
+.boxinfor {
+    padding: 5px;
+    width: 90%;
+    height: auto;
+    background-color: #272727;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes luz {
+    0% {
+        filter: brightness(70%);
+    }
+    50% {
+        filter: brightness(100%);
+    }
+    100% {
+        filter: brightness(70%);
+    }
+}
+
+.boxinfor i {
+    transition: all 0.5s;
+    animation: luz 1s infinite;
+    color: rgba(47, 241, 150, 0.527);
+    zoom: 200%;
+    margin: 0 auto;
+}
+
+.boxinfor label {
+    color: rgb(161, 161, 161);
+    font-size: 9pt;
+}
+
+.boxinfor span {
+    color: white;
+    font-size: 10pt;
+}
+
+.boxinfor button {
+    transition: all 0.7s;
+    margin-top: 10px;
+    margin: 0 auto;
+    width: 90%;
+    height: 35px;
+    text-align: center;
+    color: white;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 10px;
+    opacity: 50%;
+    font-size: 10pt;
+}
+
+.boxinfor button:hover {
+    transition: all 0.7s;
+    color: white;
+    background-color: red;
+    border: 0;
+}
+
+.inforusuario {
+    padding: 5px;
+    width: 90%;
+    height: auto;
+    background-color: #272727;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-top: 50px;
+    color: rgba(47, 241, 150);
+    font-size: 15pt;
+    text-align: center;
+}
+
+.inforusuario label {
+    color: rgb(161, 161, 161);
+    font-size: 9pt;
+}
+
+.inforusuario span {
+    color: white;
+    font-size: 10pt;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+}
+
+form label {
+    color: white;
+    font-size: 10pt;
+}
+
+form input {
+    padding-left: 10px;
+    font-size: 10pt;
+    border-radius: 10px;
+    border: 1px solid rgba(47, 241, 150, 0.527);
+    outline: none;
+    height: 40px;
+    background-color: transparent;
+    color: rgba(47, 241, 150, 0.527);
+}
+
+.submit {
+    display: none;
+    border-radius: 10px;
+    border: 1px solid rgba(47, 241, 150, 0.527);
+    outline: none;
+    background-color: transparent;
+    height: 40px;
+    color: rgba(47, 241, 150);
+}
+
+.logar {
+    border-radius: 10px;
+    border: 1px solid rgba(47, 241, 150, 0.527);
+    outline: none;
+    background-color: transparent;
+    height: 40px;
+    color: rgba(47, 241, 150);
+}
+
+form span {
+    color: gray;
+    font-size: 7pt;
+}
+
+.boxcad h1 {
+    margin-left: 5%;
+    font-size: 15pt;
+    color: rgba(47, 241, 150);
+}
+
+@media (max-width: 320px) {
+    .list {
+        flex-direction: column;
+    }
+    .body {
+        height: 480px;
+    }
+}
